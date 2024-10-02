@@ -1,0 +1,44 @@
+@startuml
+class Vehicule {
+  - string marque
+  - string modele
+  - int vitesseMax
+  - float prixJournalier
+
+  + __construct(string $marque, string $modele, int $vitesseMax, float $prixJournalier)
+  + afficherInfos() : void
+  + calculerCoutLocation(int $nbJours) : float
+}
+
+class Voiture {
+  - int nombrePortes
+  - string typeCarburant
+
+  + __construct(string $marque, string $modele, int $vitesseMax, float $prixJournalier, int $nombrePortes, string $typeCarburant)
+  + afficherInfos() : float
+  + calculerCoutLocation(int $nbJours) : float
+
+  }
+
+class Moto {
+  - string typeGuidon
+
+  + __construct(string $marque, string $modele, int $vitesseMax, float $prixJournalier, string $typeGuidon)
+  + afficherInfos() : void
+  + calculerCoutLocation(int $nbJours) : float
+}
+
+
+class Location {
+  - int nbJours
+
+  + __construct(int $nbJours)
+  + louerVehicule(Vehicule $vehicule) : void
+  + afficherDetailsLocation() : void
+}
+
+Vehicule <|-- Voiture
+Vehicule <|-- Moto
+Vehicule <|-- Location
+
+@enduml
