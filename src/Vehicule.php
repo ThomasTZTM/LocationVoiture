@@ -1,4 +1,5 @@
 <?php
+// Classe vehicule
 namespace App;
 class Vehicule
 {
