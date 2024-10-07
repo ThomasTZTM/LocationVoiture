@@ -25,7 +25,7 @@ class Moto extends Vehicule
 
     public function afficherInfos() : void
     {
-        echo "La $this->marque $this->modele avec un guidon du type $this->type_guidon qui va à $this->vitesse_max km/h, est afficher au prix de $this->prix_journalier par jour";
+        echo "La marque : $this->marque \n Le modele : $this->modele \n Type guidon : $this->type_guidon \n vitesse max : $this->vitesse_max km/h \n Prix par jour : $this->prix_journalier €";
     }
 
     public function calculerCoutLocation(int $nbJours): float
