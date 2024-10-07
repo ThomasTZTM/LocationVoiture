@@ -39,6 +39,6 @@ class Location {
 
 Vehicule <|-- Voiture
 Vehicule <|-- Moto
-Vehicule "0..*" -> "0..*" Location
+Location "0..*" -> "0..*" Vehicule
 
 @enduml

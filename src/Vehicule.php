@@ -57,7 +57,7 @@ class Vehicule
 
     public function afficherInfos() : void
     {
-        echo "La marque : $this->marque \n Le model : $this->modele \n Vitesse max : $this->vitesse_max \n Prix par jour : $this->prix_journalier €.";
+        echo "VEHICULE \n La marque : $this->marque \n Le model : $this->modele \n Vitesse max : $this->vitesse_max \n Prix par jour : $this->prix_journalier € \n";
     }
 
     public function calculerCoutLocation(int $nbJours): float

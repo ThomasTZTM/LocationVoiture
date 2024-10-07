@@ -37,7 +37,7 @@ class Voiture extends Vehicule
 
     public function afficherInfos() : void
     {
-        echo "La marque : $this->marque \n Le model : $this->modele \n Nb de porte : $this->nbportes \n Type de carburant : $this->type_carburant \n Vitesse max : $this->vitesse_max km/h \n Prix par jour : $this->prix_journalier €";
+        echo "VOITURE \n La marque : $this->marque \n Le model : $this->modele \n Nb de porte : $this->nbportes \n Type de carburant : $this->type_carburant \n Vitesse max : $this->vitesse_max km/h \n Prix par jour : $this->prix_journalier € \n";
     }
 
     public function calculerCoutLocation(int $nbJours): float
